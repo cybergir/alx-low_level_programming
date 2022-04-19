@@ -2,19 +2,27 @@
 #include <string.h>
 
 /**
- * main - Entry point
+ * main -Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char k = 'a';
+	char l = 'a';
 
-	while (k <= 'z')
+	while (l <= 'z')
 	{
-		putchar(k);
-		k++;
+		putchar(l);
+		l++;
 	}
+
+	l = 'A';
+	while (l <= 'Z')
+	{
+		putchar(l);
+		l++;
+	}
+
 	putchar('\n');
 
 	return (0);

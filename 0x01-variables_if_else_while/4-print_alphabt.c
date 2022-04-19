@@ -2,20 +2,21 @@
 #include <string.h>
 
 /**
- * main - Entry point
+ * main -Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char k = 'a';
+	char m = 'a';
 
-	while (k <= 'z')
+	while (m <= 'z')
 	{
-		putchar(k);
-		k++;
+		if (m == 'q' || m == 'e')
+			m++;
+		putchar(m);
+		m++;
 	}
 	putchar('\n');
-
 	return (0);
 }

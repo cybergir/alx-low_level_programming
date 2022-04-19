@@ -2,20 +2,19 @@
 #include <string.h>
 
 /**
- * main - Entry point
+ * main -Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char k = 'a';
+	int x = 0;
 
-	while (k <= 'z')
+	while (x / 10 < 1)
 	{
-		putchar(k);
-		k++;
+		putchar(x % 10 + '0');
+		x++;
 	}
 	putchar('\n');
-
 	return (0);
 }

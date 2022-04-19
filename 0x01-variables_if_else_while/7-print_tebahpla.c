@@ -2,18 +2,18 @@
 #include <string.h>
 
 /**
- * main - Entry point
+ * main -Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char k = 'a';
+	char k = 'z';
 
-	while (k <= 'z')
+	while (k >= 'a')
 	{
 		putchar(k);
-		k++;
+		k--;
 	}
 	putchar('\n');
 
