@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -c *.c -fpic
-gcc -shared -o liball.so *.o
+gcc *.o -fPIC -shared -o liball.so
+LD_PRELOAD=$WPD/liball.so
